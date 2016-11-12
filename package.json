@@ -1,0 +1,30 @@
+{
+  "name": "lesspass_mac",
+  "version": "0.1.0",
+  "description": "a mac client for lesspass",
+  "main": "main.js",
+  "author": "aidewoode <aidewoode@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.25.0",
+    "electron": "^1.4.5",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.11.2",
+    "pug": "^2.0.0-beta6",
+    "sass-loader": "^4.0.2",
+    "vue-loader": "^9.8.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "vue": "^2.0.5",
+    "vue-router": "^2.0.1",
+    "vuex": "^2.0.0"
+  }
+}
