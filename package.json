@@ -6,7 +6,8 @@
   "author": "aidewoode <aidewoode@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "NODE_ENV=development ./node_modules/.bin/electron .",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --hot"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -14,6 +15,11 @@
     "babel-preset-es2015": "^6.18.0",
     "css-loader": "^0.25.0",
     "electron": "^1.4.5",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^1.7.0",
+    "eslint-plugin-import": "^2.2.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^3.11.2",
     "pug": "^2.0.0-beta6",

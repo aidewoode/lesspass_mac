@@ -1,9 +1,13 @@
 <template>
 <div>
-  <p>hello world!!!!</p>
+  <p class='test'>hello worhhh!!</p>
   <router-view></router-view>
 </div>
 </template>
 <style lang='sass'>
-@import 'styles/_normalize'
+@import 'styles/_normalize';
+
+.test {
+  color: red;
+}
 </style>

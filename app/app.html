@@ -6,6 +6,14 @@
   </head>
   <body>
     <div id="js-app"></div>
-    <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+    <script type="text/javascript"  charset="utf-8">
+      if (process.env.NODE_ENV == 'development') {
+        let script = document.createElement('script');
+        script.src = 'http://localhost:8080/assets/bundle.js';
+        document.body.appendChild(script);
+      } else {
+        require('./bundle');
+      }
+    </script>
   </body>
 </html>

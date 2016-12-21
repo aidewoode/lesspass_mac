@@ -14,6 +14,3 @@ new Vue({
   el: '#js-app',
   render: h => h(App)
 });
-
-
-
