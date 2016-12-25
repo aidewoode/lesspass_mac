@@ -8,6 +8,6 @@
 @import 'styles/_normalize';
 
 .test {
-  color: red;
+  color: blue;
 }
 </style>
