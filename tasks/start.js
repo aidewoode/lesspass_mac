@@ -36,7 +36,7 @@ function run (command, color, name) {
      *
      * NOTE: needs more testing for stability
      */
-    if (/VALID/g.test(data.toString().trim().replace(/\n/g, '\n' + repeat(' ', command.length + 2))) && !isElectronOpen) {
+    if (/Compiled/g.test(data.toString().trim().replace(/\n/g, '\n' + repeat(' ', command.length + 2))) && !isElectronOpen) {
       console.log(`${BLUE}Starting electron...\n${END}`)
       run('NODE_ENV=development ./node_modules/.bin/electron .', BLUE, 'electron')
       isElectronOpen = true
@@ -56,4 +56,4 @@ function exit (code) {
 }
 
 console.log(`${YELLOW}Starting webpack-dev-server...\n${END}`)
-run('./node_modules/.bin/webpack-dev-server --inline --hot --colors' , YELLOW, 'webpack')
+run('./node_modules/.bin/webpack-dev-server --inline --hot --colors --env=development' , YELLOW, 'webpack')

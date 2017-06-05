@@ -4,9 +4,7 @@
   <router-view></router-view>
 </div>
 </template>
-<style lang='sass'>
-@import 'styles/_normalize';
-
+<style>
 .test {
   color: blue;
 }

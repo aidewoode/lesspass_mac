@@ -20,7 +20,7 @@ function build() {
     dir: path.join(__dirname, '../'),
     out: path.join(__dirname, '../builds'),
     overwrite: true,
-    ignore: /(yarn\.lock|yarn-error\.log|tasks)/
+    ignore: /(yarn\.lock|yarn-error\.log|tasks|node_modules)/
   }, (err, appPaths) => {
     if (err) {
       console.error('Error from `electron-packager` when building app...');
